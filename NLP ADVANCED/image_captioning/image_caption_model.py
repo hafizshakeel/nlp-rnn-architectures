@@ -1,3 +1,12 @@
+"""
+Natural Language Processing Model Implementation
+
+This script contains the implementation of the image captioning model. Please refer to the architecture diagram.
+
+Implementation by: Hafiz Shakeel Ahmad Awan
+Email: hafizshakeel1997@gmail.com
+"""
+
 import torch
 import torch.nn as nn
 import torchvision.models as models
