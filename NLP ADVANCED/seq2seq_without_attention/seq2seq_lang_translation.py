@@ -1,3 +1,14 @@
+"""
+Natural Language Processing Model Implementation
+
+Sequence to Sequence Learning with Neural Networks
+(Seq2Seq) Implementation: https://arxiv.org/abs/1409.3215
+
+
+Implementation by: Hafiz Shakeel Ahmad Awan
+Email: hafizshakeel1997@gmail.com
+"""
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
