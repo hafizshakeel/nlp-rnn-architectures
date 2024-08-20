@@ -4,14 +4,14 @@ In this repository, I will share my insights and implementations related to deep
 
 ## Table Of Contents
 - [NLP BASICS](#nlp-basics)
-- [ADVANCED NLP MODELS](#advanced-nlp-models)
+- [NLP ADVANCED](#nlp-advanced)
 
 ## NLP BASICS
 This folder contains implementations of fundamental NLP models using PyTorch:
 1. **Word2Vec**: Basic implementation for word embeddings using Skip Gram and CBOW models.
 2. **RNN Basics**: Simple implementations of Recurrent Neural Networks (RNNs), including GRU, LSTM, and BiLSTM.
 
-## ADVANCED NLP MODELS
+## NLP ADVANCED
 This folder includes implementations of intermediate to advanced NLP models:
 1. **Image Captioning**: Model to generate captions for images using a sequence model (pre-trained Inception_v3 as encoder and LSTM as decoder).
 2. **Seq2Seq Machine Translation (Without Attention)**: Basic sequence-to-sequence model for machine translation.
