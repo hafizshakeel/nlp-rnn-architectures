@@ -1,7 +1,10 @@
 """
 Natural Language Processing Model Implementation
 
-This script contains the implementation of the image captioning model. Please refer to the architecture diagram.
+
+This script includes the implementation of the image captioning model. Please refer to the architecture diagram.
+The below code is similar to the paper idea "Show, Attend and Tell: Neural Image Caption Generation with Visual Attention,"
+but doesn't include an attention mechanism. In the future, I plan to incorporate attention.
 
 Implementation by: Hafiz Shakeel Ahmad Awan
 Email: hafizshakeel1997@gmail.com
