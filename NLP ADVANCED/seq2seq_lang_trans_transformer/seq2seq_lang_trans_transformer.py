@@ -1,3 +1,13 @@
+"""
+Natural Language Processing Model Implementation
+
+Attention Is All You Need: https://arxiv.org/abs/1706.03762
+
+
+Implementation by: Hafiz Shakeel Ahmad Awan
+Email: hafizshakeel1997@gmail.com
+"""
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
