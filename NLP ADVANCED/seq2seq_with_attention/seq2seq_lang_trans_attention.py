@@ -1,3 +1,14 @@
+"""
+Natural Language Processing Model Implementation
+
+Neural Machine Translation by Jointly Learning to Align and Translate
+(Seq2Seq-Attention) Implementation: https://arxiv.org/abs/1409.0473
+
+
+Implementation by: Hafiz Shakeel Ahmad Awan
+Email: hafizshakeel1997@gmail.com
+"""
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
