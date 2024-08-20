@@ -1,3 +1,15 @@
+"""
+Natural Language Processing Model Implementation
+
+Efficient Estimation of Word Representations in Vector Space
+(CBOW) Implementation: https://arxiv.org/abs/1301.3781
+
+This script contains the implementation of the CBOW model.
+
+Implementation by: Hafiz Shakeel Ahmad Awan
+Email: hafizshakeel1997@gmail.com
+"""
+
 import os
 
 import torch
