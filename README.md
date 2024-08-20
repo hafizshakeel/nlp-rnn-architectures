@@ -19,4 +19,3 @@ This folder includes implementations of more advanced NLP models:
 3. **Transformers from Scratch**: Implementation of transformer networks for NLP tasks.
 4. **Seq2Seq Machine Translation Using Transformer**: Advanced sequence-to-sequence model using transformers for machine translation.
 
-Feel free to explore the implementations and contribute to the repository!
