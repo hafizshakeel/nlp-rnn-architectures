@@ -1,7 +1,14 @@
+"""
+Natural Language Processing Model Implementation
+
+Implementation of the paper "Attention Is All You Need": https://arxiv.org/abs/1301.3781
+
+Implementation by: Hafiz Shakeel Ahmad Awan
+Email: hafizshakeel1997@gmail.com
+"""
+
 import torch
 import torch.nn as nn
-
-"""Attention is all you need --> Transformer from scratch"""
 
 
 # Self Attention
