@@ -1,15 +1,20 @@
 # DLForNLP
 
 In this repository, I will share my insights and implementations related to deep learning in the field of Natural Language Processing (NLP).
+<br><br>
 
 ## Table Of Contents
 - [NLP BASICS](#nlp-basics)
 - [NLP ADVANCED](#nlp-advanced)
 
+<br>
+
 ## NLP BASICS
 This folder contains implementations of fundamental NLP models using PyTorch:
 1. **Word2Vec**: Basic implementation for word embeddings using Skip Gram and CBOW models.
 2. **RNN Basics**: Simple implementations of Recurrent Neural Networks (RNNs), including GRU, LSTM, and BiLSTM.
+
+<br>
 
 ## NLP ADVANCED
 This folder includes implementations of intermediate to advanced NLP models:
@@ -20,4 +25,13 @@ This folder includes implementations of intermediate to advanced NLP models:
 5. **Seq2Seq Machine Translation Using Transformer**: Advanced sequence-to-sequence model using transformers for machine translation.
 6. **Vision Language Models**: Coming soon.
 
-Feel free to explore the implementations and contribute to the repository!
+
+<br>
+
+## Contact 
+If you have any questions regarding the implementation, please feel free to reach out via email: [hafizshakeel1997@gmail.com](mailto:hafizshakeel1997@gmail.com)
+
+
+---
+
+Thank you for visiting my repository!
