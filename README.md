@@ -29,7 +29,7 @@ This folder includes implementations of intermediate to advanced NLP models:
 <br>
 
 
-## Credits
+## Acknowledgment & Credits
 [CBOW](https://arxiv.org/abs/1301.3781), [Skip-gram](https://arxiv.org/abs/1301.3781), [aladdinpersson](https://github.com/aladdinpersson/Machine-Learning-Collection), [Seq2Seq](https://arxiv.org/abs/1409.3215
 ), [Seq2Seq-Attention](https://arxiv.org/abs/1409.0473), [Transformer](https://arxiv.org/abs/1301.3781)
 
