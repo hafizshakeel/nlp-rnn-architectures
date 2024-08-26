@@ -28,10 +28,10 @@ This folder includes implementations of intermediate to advanced NLP models:
 
 <br>
 
-## Contact 
-If you have any questions regarding the implementation, please feel free to reach out via email: [hafizshakeel1997@gmail.com](mailto:hafizshakeel1997@gmail.com)
 
+## Credits
+[CBOW](https://arxiv.org/abs/1301.3781), [Skip-gram](https://arxiv.org/abs/1301.3781), [aladdinpersson](https://github.com/aladdinpersson/Machine-Learning-Collection), [Seq2Seq](https://arxiv.org/abs/1409.3215
+), [Seq2Seq-Attention](https://arxiv.org/abs/1409.0473), [Transformer](https://arxiv.org/abs/1301.3781)
 
----
 
 Thank you for visiting my repository!
