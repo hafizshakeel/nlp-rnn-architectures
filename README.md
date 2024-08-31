@@ -21,7 +21,7 @@ This folder includes implementations of intermediate to advanced NLP models:
 1. **Image Captioning**: Model to generate captions for images using a sequence model (pre-trained Inception_v3 as encoder and LSTM as decoder).
 2. **Seq2Seq Machine Translation (Without Attention)**: Basic sequence-to-sequence model for machine translation.
 3. **Seq2Seq Machine Translation (With Attention)**: Enhanced sequence-to-sequence model with attention mechanism for machine translation.
-4. **Transformers from Scratch**: Implementation of transformer networks for NLP tasks.
+4. **Transformer from Scratch**: Implementation of transformer networks for NLP tasks.
 5. **Seq2Seq Machine Translation Using Transformer**: Advanced sequence-to-sequence model using transformers for machine translation.
 6. **Vision Language Models**: Coming soon.
 
