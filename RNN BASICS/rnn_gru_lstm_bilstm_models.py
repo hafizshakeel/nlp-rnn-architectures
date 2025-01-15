@@ -1,25 +1,20 @@
 """
 Neural Network Models Implementation for Natural Language Processing
 
-This script provides implementations of several types of neural networks:
-1. Recurrent Neural Network (RNN)
-2. Gated Recurrent Unit (GRU)
-3. Long Short-Term Memory (LSTM)
-4. Bidirectional LSTM (BiLSTM)
+This script provides implementations of several types of neural networks. The models include:
 
-Implementation by: Hafiz Shakeel Ahmad Awan
-Email: hafizshakeel1997@gmail.com
-
-Each model is designed to work with sequences of length 28 and input features of size 28,
-processing sequences through different types of recurrent neural networks to classify input data.
-
-The models include:
 - RNN: A basic RNN that processes sequential data with a single hidden layer.
 - GRU: A GRU network that leverages gating mechanisms to handle sequences.
 - LSTM: An LSTM network that uses memory cells to retain information over longer sequences.
 - BiLSTM: A Bidirectional LSTM that processes sequences in both forward and backward directions.
 
+Each model is designed to work with sequences of length 28 and input features of size 28,
+processing sequences through different types of recurrent neural networks to classify input data.
+
 The script also includes code to train and evaluate the models using the MNIST dataset.
+
+Implementation by: Hafiz Shakeel Ahmad Awan
+Email: hafizshakeel1997@gmail.com
 """
 
 
