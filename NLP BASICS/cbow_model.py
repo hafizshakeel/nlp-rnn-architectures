@@ -23,18 +23,30 @@ from utils import predict_center_word
 class CBOW(nn.Module):
     def __init__(self, embedding_size=300, vocab_size=-1):
         super().__init__()
-        self.embeddings = nn.Embedding(vocab_size, embedding_size)  # basically a matrix
-        # where the num of rows is vocab size & no of cols are the embedding size
-        # --> i.e. each word is mapped onto some size that we call embedding size
-        self.linear = nn.Linear(embedding_size, vocab_size)  # predict the center word by mapping it to vocab size
-        # --> for this, we'll use the cross entry loss in our training
+        # Embedding layer: maps vocab indices to embedding vectors of size 'embedding_size'
+        self.embeddings = nn.Embedding(vocab_size, embedding_size)  
+        # --> The number of rows is the vocab size, and the number of columns is the embedding size.
+        #     Each word index is mapped to a vector of size 'embedding_size'.
+        
+        # Linear layer: maps the mean of context word embeddings to the vocab size for prediction
+        self.linear = nn.Linear(embedding_size, vocab_size)  
+        # --> This predicts the center word, where vocab size is the number of possible center words.
+        #     We will use cross-entropy loss for training to compare predictions with the true center word.
 
     def forward(self, context):
-        # inputs : batch_size x 4  (context * 2 --> 4 context words)
-        embeddings = self.embeddings(context).mean(1)  # batch_size * 4 * 300
-        # --> take avg along context words which is dim 1 --> batch_size * 300
-        # see word2vec_models.png (sum)
-        return self.linear(embeddings)
+        # Inputs: context is a tensor of shape (batch_size, 4), where 4 is the number of context words
+        embeddings = self.embeddings(context)  # Shape: (batch_size, 4, embedding_size)
+        
+        # Compute the average of context word embeddings across the context dimension (dim=1)
+        embeddings = embeddings.mean(1)  # Shape: (batch_size, embedding_size)
+        # --> Taking the mean of the context word embeddings reduces the dimension from 4 to 1,
+        #     resulting in a tensor of size (batch_size, embedding_size).
+        #     This step aggregates the information from the context words.
+
+        # Pass the averaged embeddings through the linear layer to predict the center word
+        return self.linear(embeddings)  # Shape: (batch_size, vocab_size)
+        # --> Output shape is (batch_size, vocab_size), where each row represents the 
+        #     prediction distribution over the vocab for the corresponding center word.
 
 
 def create_dataset():

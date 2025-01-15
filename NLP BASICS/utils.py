@@ -1,7 +1,7 @@
 import torch
 
 
-# CBOW - predict center word using four context words
+# CBOW - predict center word using context words
 def predict_center_word(net, context_words, word_to_idx, idx_to_word):
     net.eval()
     context_idxs = torch.tensor([[word_to_idx[word] for word in context_words]], dtype=torch.long)
@@ -12,7 +12,7 @@ def predict_center_word(net, context_words, word_to_idx, idx_to_word):
     return idx_to_word[predicted_idx]
 
 
-# Skip-Gram model - predict center word using four context words
+# Skip-Gram model - predict context words using center word
 def predict_context_words(model, center_word, word_to_idx, idx_to_word):
     model.eval()
     center_idx = torch.tensor([word_to_idx[center_word]], dtype=torch.long)

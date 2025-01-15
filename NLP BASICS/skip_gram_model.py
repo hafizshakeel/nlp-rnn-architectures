@@ -23,13 +23,17 @@ from utils import predict_context_words
 class SkipGram(nn.Module):
     def __init__(self, embedding_size=300, vocab_size=-1):
         super().__init__()
-        self.embeddings = nn.Embedding(vocab_size, embedding_size)
-        self.linear = nn.Linear(embedding_size, vocab_size)
+        # Embedding layer: maps input word (center word) indices to embedding vectors
+        self.embeddings = nn.Embedding(vocab_size, embedding_size)  
+        # Linear layer: maps center word embedding to vocab size for prediction
+        self.linear = nn.Linear(embedding_size, vocab_size)  
 
     def forward(self, center_word):
-        # center_word: batch_size x 1
-        embeddings = self.embeddings(center_word)  # batch_size x embedding_size
-        return self.linear(embeddings)  # batch_size x vocab_size
+        # center_word: Input tensor with shape (batch_size, 1), representing the center word in the SkipGram model
+        embeddings = self.embeddings(center_word)  # Shape: (batch_size, embedding_size)
+        # Pass the embedding through the linear layer to predict context words in the vocab
+        return self.linear(embeddings)  # Shape: (batch_size, vocab_size)
+        # --> Output: A probability distribution across the vocabulary for each input center word
 
 
 def create_dataset():
