@@ -89,7 +89,8 @@ def load_mappings():
 
 def load_skip_model(embedding_size, vocab_size):
     model = SkipGram(embedding_size=embedding_size, vocab_size=vocab_size)
-    model.load_state_dict(torch.load("skipgram_model.pth"))
+    # model.load_state_dict(torch.load("skipgram_model.pth"))
+    model.load_state_dict(torch.load("skipgram_model.pth", weights_only=True))
     model.eval()
     return model
 

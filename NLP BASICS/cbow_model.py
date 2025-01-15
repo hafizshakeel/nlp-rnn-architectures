@@ -104,7 +104,8 @@ def load_mappings():
 
 def load_cbow_model(embedding_size, vocab_size):
     model = CBOW(embedding_size=embedding_size, vocab_size=vocab_size)
-    model.load_state_dict(torch.load("cbow_model.pth"))
+    # model.load_state_dict(torch.load("cbow_model.pth"))
+    model.load_state_dict(torch.load("cbow_model.pth", weights_only=True))
     model.eval()
     return model
 
