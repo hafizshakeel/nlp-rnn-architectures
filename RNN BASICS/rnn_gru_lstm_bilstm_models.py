@@ -211,9 +211,3 @@ def check_accuracy(loader, model):
 # Check accuracy on training & test to see how good our model
 print(f"Accuracy on training set: {check_accuracy(train_loader, model) * 100:.2f}")
 print(f"Accuracy on test set: {check_accuracy(test_loader, model) * 100:.2f}")
-
-
-
-# Check accuracy on training & test to see how good our model
-print(f"Accuracy on training set: {check_accuracy(train_loader, model) * 100:.2f}")
-print(f"Accuracy on test set: {check_accuracy(test_loader, model) * 100:.2f}")
