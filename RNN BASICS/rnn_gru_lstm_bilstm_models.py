@@ -1,7 +1,7 @@
 """
 Neural Network Models Implementation for Natural Language Processing
 
-This script provides implementations of several types of neural networks. The models include:
+This script provides implementations of several types of recurrent neural networks. The models include:
 
 - RNN: A basic RNN that processes sequential data with a single hidden layer.
 - GRU: A GRU network that leverages gating mechanisms to handle sequences.
